@@ -45,18 +45,18 @@
   }
   ul { padding-left: 24px; margin-bottom: 12px; }
   li { margin-bottom: 6px; }
-  .highlight {
-    background: #fef3c7;
-    padding: 12px 16px;
-    border-radius: 8px;
-    border-left: 4px solid #f59e0b;
-    margin: 16px 0;
-  }
   .good {
     background: #dcfce7;
     padding: 12px 16px;
     border-radius: 8px;
     border-left: 4px solid #22c55e;
+    margin: 16px 0;
+  }
+  .note {
+    background: #fef3c7;
+    padding: 12px 16px;
+    border-radius: 8px;
+    border-left: 4px solid #f59e0b;
     margin: 16px 0;
   }
   a { color: #0284c7; }
@@ -74,47 +74,70 @@
   <h1>🎣 Chill Fishing — Privacy Policy</h1>
   <p class="updated">Last updated: October 31, 2026</p>
 
-  <p>Thank you for playing <strong>Chill Fishing</strong> ("the Game"). We respect your privacy. This policy explains what data the Game does and does not collect when you use it.</p>
+  <p>Thank you for playing <strong>Chill Fishing</strong> ("the Game"). This policy explains what data the Game collects, why, and how it is handled.</p>
 
   <div class="good">
-    <strong>✅ Short version:</strong> Chill Fishing does not ask for your name, email, phone number, location, contacts, or any personal account. You can play the entire game offline without logging in.
+    <strong>✅ Short version:</strong> No login required. We do not ask for your real name, email, phone number, or GPS location. The only data we store are your chosen nickname, a random anonymous ID, and your fishing scores — used only for the in-game leaderboard and cloud save.
   </div>
 
-  <h2>1. Information We Do NOT Collect</h2>
+  <h2>1. Data We Collect (Our Servers)</h2>
+  <p>When you use the leaderboard or cloud save feature, the following data is sent to our servers (hosted on Cloudflare):</p>
+  <ul>
+    <li><strong>Player nickname</strong> — the name you choose in the game (up to 16 characters). This is displayed on the leaderboard. You can use any nickname; it does not need to be your real name.</li>
+    <li><strong>Anonymous game ID</strong> — a random string generated on first launch, stored on your device. Used to identify your cloud save and leaderboard entry. It is not tied to your real identity.</li>
+    <li><strong>Game progress</strong> — gold earned, level, fish caught, and upgrades. Used to display your rank on the leaderboard and to sync your save across devices.</li>
+    <li><strong>IP address</strong> — automatically logged by Cloudflare for security and rate-limiting purposes. Not linked to your nickname or game data.</li>
+  </ul>
+
+  <h2>2. Data We Do NOT Collect</h2>
   <p>The Game does <strong>not</strong> collect or transmit:</p>
   <ul>
-    <li>Your name, email, phone number, or any account information</li>
+    <li>Your real name, email address, phone number, or any account login</li>
     <li>Your GPS location or precise location</li>
-    <li>Your contacts, photos, or media files</li>
-    <li>Your device ID, advertising ID, or any persistent identifier</li>
+    <li>Your contacts, photos, microphone, or camera</li>
     <li>Your browsing history or any data outside the Game</li>
   </ul>
-  <p>All game progress (gold, fish caught, level, upgrades) is stored <strong>locally on your device only</strong>. Uninstalling the Game erases this data.</p>
 
-  <h2>2. Information Collected by Third-Party SDKs</h2>
-  <p>The Game uses <strong>Google AdMob</strong> to show advertisements (rewarded ads for extra gold, and occasional banner ads). AdMob may collect certain data as described in Google's privacy policy, including:</p>
+  <h2>3. Data Collected by Google AdMob (Third-Party SDK)</h2>
+  <p>The Game shows advertisements (rewarded videos for extra gold, and occasional banner ads) via <strong>Google AdMob</strong>. AdMob may collect:</p>
   <ul>
     <li>Device advertising ID (for ad personalization and frequency capping)</li>
-    <li>Approximate IP address (used to determine rough country/region for ad serving)</li>
-    <li>App interaction data (ad impressions, clicks)</li>
+    <li>Approximate IP address (rough country/region for ad serving)</li>
+    <li>Ad interaction data (impressions, clicks)</li>
   </ul>
-  <p>You can reset or opt out of personalized ads in your device settings: <em>Settings → Google → Ads → Opt out of Ads Personalization</em>.</p>
-  <p>For more details, see Google's privacy policy: <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></p>
+  <p>You can opt out of personalized ads in your device settings: <em>Settings → Google → Ads → Opt out of Ads Personalization</em>.</p>
+  <p>See Google's privacy policy: <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></p>
 
-  <h2>3. Children's Privacy</h2>
+  <h2>4. How We Use Your Data</h2>
+  <ul>
+    <li>Display your nickname and score on the leaderboard (Top 100 by gold)</li>
+    <li>Sync your game progress across devices (cloud save)</li>
+    <li>Improve game stability and prevent leaderboard abuse</li>
+  </ul>
+  <p>We <strong>do not</strong> sell, rent, or share your data with any third parties except Google AdMob (for ads) and Cloudflare (for hosting).</p>
+
+  <h2>5. Data Retention & Deletion</h2>
+  <p>Your game data is stored on our servers until you request deletion. To delete your data, email us at <a href="mailto:mndgdd@gmail.com">mndgdd@gmail.com</a> with your game ID or nickname, and we will remove it within 7 days. Uninstalling the Game from your device does not automatically delete server-side leaderboard data.</p>
+
+  <h2>6. Children's Privacy</h2>
   <p>Chill Fishing is designed for a general audience and is not directed to children under 13. We do not knowingly collect personal information from children. AdMob is configured to serve non-personalized ads in compliance with COPPA and Google Play Families policy.</p>
 
-  <h2>4. Offline Play</h2>
-  <p>You can play the entire game offline. No data is sent to our servers when you play without an internet connection. The Game only contacts the network to load ads.</p>
+  <h2>7. Offline Play</h2>
+  <p>You can play the entire game offline. The Game only contacts the network when you:</p>
+  <ul>
+    <li>Watch a rewarded ad (AdMob)</li>
+    <li>View or submit to the leaderboard (our servers)</li>
+    <li>Sync your cloud save (our servers)</li>
+  </ul>
 
-  <h2>5. Data Security</h2>
-  <p>Because all game data stays on your device, there is no server database to breach. The only network requests are to Google AdMob's ad servers over HTTPS.</p>
+  <h2>8. Data Security</h2>
+  <p>All network requests use HTTPS encryption. Our database (Cloudflare D1) stores only the anonymous game ID, nickname, and game scores. There is no real-name data, no financial information, and no passwords.</p>
 
-  <h2>6. Changes to This Policy</h2>
+  <h2>9. Changes to This Policy</h2>
   <p>If we update this privacy policy, we will post the new version on this page and update the "Last updated" date above.</p>
 
-  <h2>7. Contact</h2>
-  <p>If you have questions about this privacy policy, contact us at:</p>
+  <h2>10. Contact</h2>
+  <p>If you have questions or want to request data deletion, contact us at:</p>
   <p>📧 <a href="mailto:mndgdd@gmail.com">mndgdd@gmail.com</a></p>
 
   <div class="footer">
