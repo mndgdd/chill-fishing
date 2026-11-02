@@ -1,6 +1,6 @@
 {
-  "versionCode": 10003,
-  "versionName": "1.0.3",
-  "apkUrl": "https://mndgdd.github.io/chill-fishing/apk/ChillFishing-v1.0.3.apk",
-  "notes": "Fixed sponsor link (HTX added)."
+  "versionCode": 10004,
+  "versionName": "1.0.4",
+  "apkUrl": "https://mndgdd.github.io/chill-fishing/apk/ChillFishing-v1.0.4.apk",
+  "notes": "Auto-fishing now allows browsing all panels."
 }
