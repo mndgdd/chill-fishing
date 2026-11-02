@@ -1,6 +1,6 @@
 {
-  "versionCode": 10001,
-  "versionName": "1.0.1",
-  "apkUrl": "https://mndgdd.github.io/chill-fishing/apk/ChillFishing-v1.0.1.apk",
-  "notes": "Smoother UI, faster panels, sponsor support keeps the game free."
+  "versionCode": 10002,
+  "versionName": "1.0.2",
+  "apkUrl": "https://mndgdd.github.io/chill-fishing/apk/ChillFishing-v1.0.2.apk",
+  "notes": "Ads now open first, then a 10-second countdown. Confirm prompt added."
 }
